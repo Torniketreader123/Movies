@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
   },
   InputHeaderContainer: {
     marginHorizontal: SPACING.space_36,
-    marginTop: SPACING.space_28,
+    marginTop: 56,
   },
   containerGap36: {
     gap: SPACING.space_36,
