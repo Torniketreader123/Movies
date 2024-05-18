@@ -7,7 +7,6 @@ import {COLORS, FONTSIZE, SPACING} from '../theme/theme';
 import CustomIcon from '../components/CustomIcon';
 import {View, StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,12 +31,12 @@ const TabNavigator = () => {
             return (
               <View
                 style={[
-                  styles.activeTabBacground,
+                  styles.activeTabBackground,
                   focused ? {backgroundColor: COLORS.Orange} : {},
                 ]}>
                 <CustomIcon
                   name="video"
-                  color={Colors.white}
+                  color={COLORS.White}
                   size={FONTSIZE.size_30}
                 />
               </View>
@@ -54,12 +53,12 @@ const TabNavigator = () => {
             return (
               <View
                 style={[
-                  styles.activeTabBacground,
+                  styles.activeTabBackground,
                   focused ? {backgroundColor: COLORS.Orange} : {},
                 ]}>
                 <CustomIcon
                   name="search"
-                  color={Colors.white}
+                  color={COLORS.White}
                   size={FONTSIZE.size_30}
                 />
               </View>
@@ -76,12 +75,12 @@ const TabNavigator = () => {
             return (
               <View
                 style={[
-                  styles.activeTabBacground,
+                  styles.activeTabBackground,
                   focused ? {backgroundColor: COLORS.Orange} : {},
                 ]}>
                 <CustomIcon
                   name="ticket"
-                  color={Colors.white}
+                  color={COLORS.White}
                   size={FONTSIZE.size_30}
                 />
               </View>
@@ -98,12 +97,12 @@ const TabNavigator = () => {
             return (
               <View
                 style={[
-                  styles.activeTabBacground,
+                  styles.activeTabBackground,
                   focused ? {backgroundColor: COLORS.Orange} : {},
                 ]}>
                 <CustomIcon
                   name="user"
-                  color={Colors.white}
+                  color={COLORS.White}
                   size={FONTSIZE.size_30}
                 />
               </View>
@@ -114,12 +113,13 @@ const TabNavigator = () => {
     </Tab.Navigator>
   );
 };
-export default TabNavigator;
 
 const styles = StyleSheet.create({
-  activeTabBacground: {
+  activeTabBackground: {
     backgroundColor: COLORS.Black,
     padding: SPACING.space_18,
     borderRadius: SPACING.space_18 * 10,
   },
 });
+
+export default TabNavigator;
