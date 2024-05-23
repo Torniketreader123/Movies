@@ -15,5 +15,3 @@ export const movieDetails = (id: number) => {
 export const movieCastDetails = (id: number) => {
   return `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${apikey}`;
 };
-
-

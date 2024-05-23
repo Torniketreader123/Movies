@@ -13,7 +13,6 @@ import {baseImagePath, searchMovies} from '../api/apicalls';
 import SubMovieCard from '../components/SubMovieCrad';
 import InputHeader from '../components/inputHeader';
 
-
 const {width, height} = Dimensions.get('screen');
 
 const SearchScreen = ({navigation}: any) => {
