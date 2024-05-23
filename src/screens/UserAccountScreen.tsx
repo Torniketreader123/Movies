@@ -4,7 +4,6 @@ import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/theme';
 import AppHeader from '../components/AppHeader';
 import SettingComponent from '../components/SettingComponents';
 
-
 const UserAccountScreen = ({navigation}: any) => {
   return (
     <View style={styles.container}>

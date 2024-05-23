@@ -8,7 +8,6 @@ import {
   SPACING,
 } from '../theme/theme';
 
-
 const CastCard = (props: any) => {
   return (
     <View
